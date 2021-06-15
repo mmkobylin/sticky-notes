@@ -9,7 +9,7 @@ function App() {
   const addNote = () => {}
 
   return (
-    <div className="App">
+    <div className="sticky-notes">
       <h1>
         Sticky Notes
       </h1>
@@ -22,6 +22,7 @@ function App() {
           </textarea>
           <button>Add!</button>
         </form>
+        { noteInput }
     </div>
   );
 }
