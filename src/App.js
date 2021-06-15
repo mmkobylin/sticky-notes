@@ -1,20 +1,49 @@
 import './App.css';
 import React, { useState, useReducer } from 'react';
 
+const initialNoteState = {
+  lastNoteCreated: null, 
+  totalNotes: 0,
+  notes: [],
+}
 
 function App() {
-
-  const addNote = () => {}
-  
   const [ noteInput, setNoteInput ] = useState(' ');
+  const addNote = ( e ) => {
+    e.preventDefault(); 
+
+   
+    // return on empty
+    if (!noteInput) {
+      return 
+    } 
+
+    const newNote = {
+      text: noteInput,
+    }; 
+
+    dispatch( { type: 'ADD_NOTE', payload: newNote } )
+  }
 
   const notesReducer = ( prevState, action ) => {
-    switch(action.type) {
+    switch (action.type) {
       case 'ADD_NOTE' : {
-        action.payload
+        // updating the state from intial state
+        const newState = {
+          lastNoteCreated: new Date().toTimeString().slice(0, 8),
+          // totalNotes: prevState.note.length + 1,
+          notes: [...prevState.notes, action.payload]
+        };
+        console.log('After ADD_NOTE: ', newState); {
+          return newState;
+        }
       }
     }
   }
+  
+  // reducer 
+  const [ notesState, dispatch] = useReducer(notesReducer, initialNoteState )
+
 
   return (
     <div className="sticky-notes">
