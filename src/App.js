@@ -1,13 +1,15 @@
 import './App.css';
 import React, { useState, useReducer } from 'react';
 
-const initialNoteState = {
-  lastNoteCreated: null, 
-  totalNotes: 0,
-  notes: [],
-}
 
 function App() {
+
+  const initialNoteState = {
+    lastNoteCreated: null, 
+    totalNotes: 0,
+    notes: [],
+  }
+
   const [ noteInput, setNoteInput ] = useState(' ');
   const addNote = ( e ) => {
     e.preventDefault(); 
@@ -31,7 +33,7 @@ function App() {
         // updating the state from intial state
         const newState = {
           lastNoteCreated: new Date().toTimeString().slice(0, 8),
-          // totalNotes: prevState.note.length + 1,
+          totalNotes: prevState.notes.length + 1,
           notes: [...prevState.notes, action.payload]
         };
         console.log('After ADD_NOTE: ', newState); {
