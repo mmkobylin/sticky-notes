@@ -1,12 +1,20 @@
 import './App.css';
-import React, { useState } from 'react';
+import React, { useState, useReducer } from 'react';
 
 
 function App() {
+
+  const addNote = () => {}
   
   const [ noteInput, setNoteInput ] = useState(' ');
 
-  const addNote = () => {}
+  const notesReducer = ( prevState, action ) => {
+    switch(action.type) {
+      case 'ADD_NOTE' : {
+        action.payload
+      }
+    }
+  }
 
   return (
     <div className="sticky-notes">
