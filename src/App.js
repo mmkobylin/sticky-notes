@@ -1,14 +1,14 @@
 import './App.css';
 import React, { useState, useReducer } from 'react';
+import { v4 as uuidv4 } from 'uuid';
 
+const initialNoteState = {
+  lastNoteCreated: null, 
+  totalNotes: 0,
+  notes: [],
+}
 
 function App() {
-
-  const initialNoteState = {
-    lastNoteCreated: null, 
-    totalNotes: 0,
-    notes: [],
-  }
 
   const [ noteInput, setNoteInput ] = useState(' ');
   const addNote = ( e ) => {
@@ -21,7 +21,9 @@ function App() {
     } 
 
     const newNote = {
+      id: uuidv4(),
       text: noteInput,
+      // rotate
     }; 
 
     dispatch( { type: 'ADD_NOTE', payload: newNote } )
