@@ -36,7 +36,6 @@ code {
 }
 
 .note {
-  background-color: rgb(156, 156, 0);
   cursor: pointer;
   position: absolute;
   top: 100px;

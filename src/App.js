@@ -10,8 +10,9 @@ const initialNoteState = {
 
 function App() {
 
-  const [ noteInput, setNoteInput ] = useState(' ');
-  const addNote = ( e ) => {
+    const [ noteInput, setNoteInput ] = useState(' ');
+
+    const addNote = ( e ) => {
     e.preventDefault(); 
     // return on empty
     if (!noteInput) {
@@ -26,6 +27,8 @@ function App() {
 
     dispatch( { type: 'ADD_NOTE', payload: newNote } )
   }
+
+  const color = [ '#ff65a3', '#feff9c', '#7afcff', '#fff740', '#b3d062' ]
 
   const notesReducer = ( prevState, action ) => {
     switch (action.type) {
@@ -57,6 +60,7 @@ function App() {
     event.target.style.top = `${event.pageY - 50 }px`;
   }
   
+  
   return (
     <div className="sticky-notes"
       onDragOver = { dragOver } 
@@ -78,17 +82,25 @@ function App() {
 
       { notesState 
         .notes
+        
         .map(note => (
           <div className="note"
+
 
             draggable = "true" 
             onDragEnd = { dropNote }
             // unique reference
             key = { note.id }
-            style = { { transform: `rotate(${note.rotate}deg)` } }
+            style = { { 
+              transform: `rotate(${note.rotate}deg)`,
+              // changes all them
+              backgroundColor:  color[note.id.match(/\d/) % color.length]
+
+            } }
           >
             <pre className="text"> { note.text } </pre>
           </div>
+
         )
 
     )
