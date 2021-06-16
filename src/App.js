@@ -54,16 +54,28 @@ function App() {
       <h1>
         Sticky Notes
       </h1>
-        <form onSubmit = { addNote } className="note-form">
-          <textarea 
-            value = { noteInput }
-            placeholder = "Create a new note"
-            onChange = { (e) => { setNoteInput ( e.target.value ) } }
-          >
-          </textarea>
-          <button>Add!</button>
-        </form>
-        { noteInput }
+      <form onSubmit = { addNote } className="note-form">
+        <textarea 
+          value = { noteInput }
+          placeholder = "Create a new note"
+          onChange = { (e) => { setNoteInput ( e.target.value ) } }
+        >
+        </textarea>
+        <button>Add!</button>
+      </form>
+
+      {/* access noteState */} 
+
+      { notesState 
+        .notes
+        .map(note => (
+          <div className="note">
+            <pre className="text"> { note.text } </pre>
+          </div>
+        )
+
+    )
+      }
     </div>
   );
 }
