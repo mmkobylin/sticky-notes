@@ -15,9 +15,15 @@ button {
   max-width: 100%;
 }
 
+.close {
+  text-align: right;
+  transition: 0.3s all ease;
+}
+.close:hover {
+  transform: scale(1.5);
+}
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: 'Courier New', monospace;
 }
 
 .note-form {
