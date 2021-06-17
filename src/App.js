@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useState, useReducer } from 'react';
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuid } from 'uuid';
+import { ReactSVG } from 'react-svg'
+
 
 const initialNoteState = {
   lastNoteCreated: null, 
@@ -20,7 +22,7 @@ function App() {
     } 
 
     const newNote = {
-      id: uuidv4(),
+      id: uuid(),
       text: noteInput,
       rotate: Math.floor(Math.random()*15)
     }; 
@@ -86,7 +88,6 @@ function App() {
         .map(note => (
           <div className="note"
 
-
             draggable = "true" 
             onDragEnd = { dropNote }
             // unique reference
@@ -95,9 +96,12 @@ function App() {
               transform: `rotate(${note.rotate}deg)`,
               // changes all them
               backgroundColor:  color[note.id.match(/\d/) % color.length]
-
             } }
           >
+            <div className="close">
+              X
+
+            </div>
             <pre className="text"> { note.text } </pre>
           </div>
 
