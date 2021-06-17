@@ -45,6 +45,19 @@ function App() {
           return newState;
         }
       }
+      case 'DELETE_NOTE' : {
+        const newState = {
+          // copy previous statement
+          ...prevState,
+          totalNotes: prevState.notes.length - 1, 
+          // filter if thats the one you clicked
+          notes: prevState.notes.filter(note => note.id !== action.payload.id) 
+
+        };
+        {
+          return newState;
+        }
+      }
     }
   }
   
@@ -98,7 +111,9 @@ function App() {
               backgroundColor:  color[note.id.match(/\d/) % color.length]
             } }
           >
-            <div className="close">
+            <div className="close"
+              onClick = { () => dispatch( { type: 'DELETE_NOTE', payload: note } )}
+            >
               X
 
             </div>
