@@ -1,7 +1,7 @@
 import './App.css';
 import React, { useState, useReducer } from 'react';
 import { v4 as uuid } from 'uuid';
-import { ReactSVG } from 'react-svg'
+import { ReactComponent as Cancel } from './cancel-button.svg';
 
 
 const initialNoteState = {
@@ -114,7 +114,7 @@ function App() {
             <div className="close"
               onClick = { () => dispatch( { type: 'DELETE_NOTE', payload: note } )}
             >
-              X
+              <Cancel/>
 
             </div>
             <pre className="text"> { note.text } </pre>
