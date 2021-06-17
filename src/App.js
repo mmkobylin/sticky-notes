@@ -14,12 +14,11 @@ function App() {
 
     const [ noteInput, setNoteInput ] = useState(' ');
 
-    const addNote = ( e ) => {
-    e.preventDefault(); 
-    // return on empty
-    if (!noteInput) {
-      return 
-    } 
+    const addNote = event => {
+      event.preventDefault();
+      if (!noteInput) {
+          return;
+      }
 
     const newNote = {
       id: uuid(),
@@ -41,6 +40,7 @@ function App() {
           totalNotes: prevState.notes.length + 1,
           notes: [...prevState.notes, action.payload]
         };
+
         {
           return newState;
         }
@@ -90,7 +90,9 @@ function App() {
           onChange = { (e) => { setNoteInput ( e.target.value ) } }
         >
         </textarea>
-        <button>Add!</button>
+        <button
+          disabled = { !noteInput } 
+        >Add!</button>
       </form>
 
       {/* access noteState */} 
@@ -127,5 +129,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
