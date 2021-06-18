@@ -45,14 +45,13 @@ code {
 }
 
 .note-form textarea {
-
   background-color: #feff9c;
   border: none;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 100%;
-  max-width: 100%;
+  min-width: 80%;
+  max-width: 80%;
+  padding: 10%;
   outline: none;
-  min-height: 100px;
 }
 
 .note {
