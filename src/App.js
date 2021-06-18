@@ -12,12 +12,12 @@ const initialNoteState = {
 
 function App() {
 
-    const [ noteInput, setNoteInput ] = useState(' ');
+    const [ noteInput, setNoteInput ] = useState('');
 
     const addNote = event => {
       event.preventDefault();
       if (!noteInput) {
-          return;
+        return;
       }
 
     const newNote = {
@@ -27,6 +27,8 @@ function App() {
     }; 
 
     dispatch( { type: 'ADD_NOTE', payload: newNote } )
+    //setting empty 
+    setNoteInput('');
   }
 
   const color = [ '#ff65a3', '#feff9c', '#7afcff', '#fff740', '#b3d062' ]
@@ -92,6 +94,7 @@ function App() {
         </textarea>
         <button
           disabled = { !noteInput } 
+          style = { !noteInput ? { cursor: 'not-allowed' } : null }
         >Add!</button>
       </form>
 
