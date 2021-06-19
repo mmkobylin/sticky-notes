@@ -82,9 +82,11 @@ function App() {
     <div className="sticky-notes"
       onDragOver = { dragOver } 
     >
-      <h1>
-        Sticky Notes
-      </h1>
+      <header>
+        <h1>
+          Sticky Notes
+        </h1>
+      </header>
       <form onSubmit = { addNote } className="note-form">
         <textarea 
           value = { noteInput }

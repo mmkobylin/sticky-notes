@@ -2,9 +2,12 @@
   margin: 0;
   padding: 0;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
 
 body {
+  background-image: url(./cork.jpg);
+  background-size: cover;
   text-align: center;
   margin: 5%;
 }
@@ -32,6 +35,18 @@ button:hover:enabled{
 
 code {
   font-family: 'Courier New', monospace;
+}
+
+h1 {
+  background-color: #ff65a3;
+  width: fit-content;
+  letter-spacing: 2px;
+  padding: 30px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -79,7 +94,7 @@ code {
   width: 100%;
   white-space: pre-wrap;
   display: flex;
-justify-content: center;
+  justify-content: center;
   margin-top: 10%;
 }
 
