@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState, useReducer } from 'react';
 import { v4 as uuid } from 'uuid';
 import { ReactComponent as Cancel } from './cancel-button.svg';
-
+import indie from './IndieFlower-Regular.ttf';
 
 const initialNoteState = {
   lastNoteCreated: null, 
@@ -42,10 +42,7 @@ function App() {
           totalNotes: prevState.notes.length + 1,
           notes: [...prevState.notes, action.payload]
         };
-
-        {
-          return newState;
-        }
+        return newState;
       }
       case 'DELETE_NOTE' : {
         const newState = {
@@ -56,10 +53,9 @@ function App() {
           notes: prevState.notes.filter(note => note.id !== action.payload.id) 
 
         };
-        {
-          return newState;
-        }
+        return newState;
       }
+    
     }
   }
   
