@@ -21,7 +21,7 @@ body {
 }
 
 button {
-  background-color: #7afcff;
+  background-color: #FFFFFF;
   border: none;
   font-size: 1rem;
   font-weight: bold;
@@ -94,7 +94,6 @@ header {
   height: 230px;
   width: 230px;
   padding: 10px;
-  border: solid #BDBDBD 1px; 
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
 	-moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
