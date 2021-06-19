@@ -2,7 +2,6 @@ import './App.css';
 import React, { useState, useReducer } from 'react';
 import { v4 as uuid } from 'uuid';
 import { ReactComponent as Cancel } from './cancel-button.svg';
-import indie from './IndieFlower-Regular.ttf';
 
 const initialNoteState = {
   lastNoteCreated: null, 
@@ -80,7 +79,7 @@ function App() {
     >
       <header>
         <h1>
-          Sticky Notes
+          Sticky Notes ( { notesState.totalNotes } )
         </h1>
       </header>
       <form onSubmit = { addNote } className="note-form">
