@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/sticky-notes/static/css/main.d079757c.chunk.css",
+    "main.js": "/sticky-notes/static/js/main.f073983b.chunk.js",
+    "main.js.map": "/sticky-notes/static/js/main.f073983b.chunk.js.map",
+    "runtime-main.js": "/sticky-notes/static/js/runtime-main.2ce14a10.js",
+    "runtime-main.js.map": "/sticky-notes/static/js/runtime-main.2ce14a10.js.map",
+    "static/js/2.443de00e.chunk.js": "/sticky-notes/static/js/2.443de00e.chunk.js",
+    "static/js/2.443de00e.chunk.js.map": "/sticky-notes/static/js/2.443de00e.chunk.js.map",
+    "static/js/3.1218b35e.chunk.js": "/sticky-notes/static/js/3.1218b35e.chunk.js",
+    "static/js/3.1218b35e.chunk.js.map": "/sticky-notes/static/js/3.1218b35e.chunk.js.map",
+    "index.html": "/sticky-notes/index.html",
+    "static/css/main.d079757c.chunk.css.map": "/sticky-notes/static/css/main.d079757c.chunk.css.map",
+    "static/js/2.443de00e.chunk.js.LICENSE.txt": "/sticky-notes/static/js/2.443de00e.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/sticky-notes/static/media/cork.24b4ce68.jpg",
+    "static/media/cancel-button.b6929e14.svg": "/sticky-notes/static/media/cancel-button.b6929e14.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2ce14a10.js",
+    "static/js/2.443de00e.chunk.js",
+    "static/css/main.d079757c.chunk.css",
+    "static/js/main.f073983b.chunk.js"
+  ]
+}
