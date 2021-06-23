@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/sticky-notes/static/css/main.d079757c.chunk.css",
-    "main.js": "/sticky-notes/static/js/main.f073983b.chunk.js",
-    "main.js.map": "/sticky-notes/static/js/main.f073983b.chunk.js.map",
-    "runtime-main.js": "/sticky-notes/static/js/runtime-main.2ce14a10.js",
-    "runtime-main.js.map": "/sticky-notes/static/js/runtime-main.2ce14a10.js.map",
-    "static/js/2.443de00e.chunk.js": "/sticky-notes/static/js/2.443de00e.chunk.js",
-    "static/js/2.443de00e.chunk.js.map": "/sticky-notes/static/js/2.443de00e.chunk.js.map",
-    "static/js/3.1218b35e.chunk.js": "/sticky-notes/static/js/3.1218b35e.chunk.js",
-    "static/js/3.1218b35e.chunk.js.map": "/sticky-notes/static/js/3.1218b35e.chunk.js.map",
+    "main.css": "/sticky-notes/static/css/main.8bf03a00.chunk.css",
+    "main.js": "/sticky-notes/static/js/main.f02afcab.chunk.js",
+    "main.js.map": "/sticky-notes/static/js/main.f02afcab.chunk.js.map",
+    "runtime-main.js": "/sticky-notes/static/js/runtime-main.b4c28219.js",
+    "runtime-main.js.map": "/sticky-notes/static/js/runtime-main.b4c28219.js.map",
+    "static/js/2.416e6cbc.chunk.js": "/sticky-notes/static/js/2.416e6cbc.chunk.js",
+    "static/js/2.416e6cbc.chunk.js.map": "/sticky-notes/static/js/2.416e6cbc.chunk.js.map",
+    "static/js/3.17a55986.chunk.js": "/sticky-notes/static/js/3.17a55986.chunk.js",
+    "static/js/3.17a55986.chunk.js.map": "/sticky-notes/static/js/3.17a55986.chunk.js.map",
     "index.html": "/sticky-notes/index.html",
-    "static/css/main.d079757c.chunk.css.map": "/sticky-notes/static/css/main.d079757c.chunk.css.map",
-    "static/js/2.443de00e.chunk.js.LICENSE.txt": "/sticky-notes/static/js/2.443de00e.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/sticky-notes/static/media/cork.24b4ce68.jpg",
+    "static/css/main.8bf03a00.chunk.css.map": "/sticky-notes/static/css/main.8bf03a00.chunk.css.map",
+    "static/js/2.416e6cbc.chunk.js.LICENSE.txt": "/sticky-notes/static/js/2.416e6cbc.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/sticky-notes/static/media/cork_square.51b070d9.PNG",
     "static/media/cancel-button.b6929e14.svg": "/sticky-notes/static/media/cancel-button.b6929e14.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2ce14a10.js",
-    "static/js/2.443de00e.chunk.js",
-    "static/css/main.d079757c.chunk.css",
-    "static/js/main.f073983b.chunk.js"
+    "static/js/runtime-main.b4c28219.js",
+    "static/js/2.416e6cbc.chunk.js",
+    "static/css/main.8bf03a00.chunk.css",
+    "static/js/main.f02afcab.chunk.js"
   ]
 }
