@@ -160,42 +160,21 @@ svg:hover {
   }
   
   h1 {
-    background-color: #ff65a3;
-    width: fit-content;
-    letter-spacing: 2px;
+    font-size: 1.5rem;
     padding: 30px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
+
   }
-  
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  
   
   .note-form {
-    display: flex;
-    flex-direction: column;
     width: 300px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
   }
   
   .note-form textarea {
-    flex-direction: row;
-    background-color: #feff9c;
-    border: none;
     min-width: 80%;
     max-width: 80%;
     min-height: 100px;
     padding: 10%;
-    outline: none;
-    display: flex;
-    justify-content: space-between;
-    font-family: indie, serif;
+
     font-size: 1.5rem;
   
   }
@@ -208,9 +187,6 @@ svg:hover {
     height: 230px;
     width: 230px;
     padding: 10px;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-    -webkit-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5)  ; 
-    -moz-box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5); 
   }
   
   .note:hover {
@@ -220,11 +196,7 @@ svg:hover {
   .note .text {
     font-family: indie, sans-serif;
     height: 100%;
-    overflow: unset;
     width: 100%;
-    white-space: pre-wrap;
-    display: flex;
-    justify-content: center;
     margin-top: 10%;
     font-size: 1.5rem;
   
@@ -246,10 +218,17 @@ svg:hover {
   }
 }
 
-@media screen and ( min-width:1200px ) 
+@media screen and ( min-width:1300px ) 
 { 
   body {
-    background-image: url(./cork_small.PNG);
+    margin: 50px;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+
+  body {
+    background-image: url(./cork.jpg);
     background-size: cover;
   }
 }
