@@ -132,13 +132,8 @@ svg:hover {
 }
 
 
-@media screen and ( min-width:1200px ) 
+@media screen and ( min-width:700px ) 
 { 
-  body {
-    background-image: url(./cork_small.PNG);
-    background-size: cover;
-  }
-
   button {
     background-color: #FFFFFF;
     border: none;
@@ -248,5 +243,13 @@ svg:hover {
   
   svg:hover {
     transform: scale(1.5);
+  }
+}
+
+@media screen and ( min-width:1200px ) 
+{ 
+  body {
+    background-image: url(./cork_small.PNG);
+    background-size: cover;
   }
 }
