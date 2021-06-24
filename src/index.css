@@ -16,6 +16,7 @@
 body {
   background-image: url(./cork_square.PNG);
   background-size: cover;
+  background-attachment: fixed;
   text-align: center;
   padding: 1%;
 }
@@ -134,6 +135,7 @@ svg:hover {
 
 @media screen and ( min-width:700px ) 
 { 
+
   button {
     background-color: #FFFFFF;
     border: none;
@@ -229,6 +231,7 @@ svg:hover {
 
   body {
     background-image: url(./cork.jpg);
-    background-size: cover;
+    background-size: 100%;
+    overflow: hidden;
   }
 }
