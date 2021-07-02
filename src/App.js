@@ -81,8 +81,12 @@ function App() {
           Sticky Notes ( { notesState.totalNotes } )
         </h1>
       </header>
-      <form onSubmit = { addNote } className="note-form">
+      <form 
+        draggable = "true" 
+        onDragEnd = { dropNote }
+        onSubmit = { addNote } className="note-form">
         <textarea 
+
           value = { noteInput }
           placeholder = "Create a new note"
           onChange = { (e) => { setNoteInput ( e.target.value ) } }
