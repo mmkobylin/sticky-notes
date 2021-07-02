@@ -22,8 +22,8 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "clean": "rm -rf node_modules", 
-    "reinstall": "npm run clean && npm install", 
+    "clean": "rm -rf node_modules",
+    "reinstall": "npm run clean && npm install",
     "rebuild": "npm run clean && npm install && npm run build"
   },
   "eslintConfig": {

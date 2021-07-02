@@ -7,10 +7,15 @@
   src: local('libre'), url(./LibreBaskerville-Bold.ttf) format('truetype');
 }
 
+@font-face {
+  font-family: 'permament';
+  src: local('permament'), url(./PermanentMarker-Regular.ttf) format('truetype');
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: permament, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -48,6 +53,7 @@ code {
 
 h1 {
   background-color: #ff65a3;
+  font-family: permament, 'Times New Roman', Times, serif;
   font-size: 1rem;
   width: fit-content;
   letter-spacing: 2px;
